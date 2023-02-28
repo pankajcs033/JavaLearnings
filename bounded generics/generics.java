@@ -5,7 +5,7 @@ import javax.print.event.PrintEvent;
 
 public class generics{
     public static void main(String[] args) {
-        String[] strs = {"abc", "bcd", "def"};
+        String[] strs = {"abc", "bcd", "def", "hij"};
         Integer[] nums = {1, 2, 3, 4};
 
         System.out.println(convertIntoList(strs));
