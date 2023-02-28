@@ -1,16 +1,17 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class generics{
+public class boundedGenerics {
+
     public static void main(String[] args) {
-        String[] strs = {"abc", "bcd", "def", "hij"};
+        Double[] dobs = {10.2, 11.1, 22.2};
         Integer[] nums = {1, 2, 3, 4};
 
-        System.out.println(convertIntoList(strs));
+        System.out.println(convertIntoList(dobs));
         System.out.println(convertIntoList(nums));
     }
 
-    public static <T> List<T> convertIntoList(T[] input){
+    public static <T extends Number> List<T> convertIntoList(T[] input){
         return Arrays.asList(input);
     }
 }
